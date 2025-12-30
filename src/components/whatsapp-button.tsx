@@ -26,7 +26,7 @@ export function WhatsAppButton() {
   return (
     <Button
       asChild
-      className="fixed bottom-6 right-6 z-50 size-16 rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#128C7E]"
+      className="fixed bottom-6 right-6 z-50 size-14 rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#128C7E]"
       aria-label="Contattaci su WhatsApp"
     >
       <Link href={whatsappLink} target="_blank" rel="noopener noreferrer">
