@@ -32,7 +32,7 @@ export function Logo({ className }: { className?: string }) {
         <path d="M10 5H4" />
       </svg>
       <span className="font-headline text-2xl font-bold text-foreground">
-        PlumbQuick
+        IonaBrosIdraulica Srls
       </span>
     </div>
   );

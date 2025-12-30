@@ -60,7 +60,7 @@ export function AIssueAnalyzer() {
 
   return (
     <div className="mx-auto mt-8 max-w-3xl">
-      <Card>
+      <Card className="bg-card/80 backdrop-blur-sm">
         <CardContent className="p-6">
           <Form {...form}>
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -72,7 +72,7 @@ export function AIssueAnalyzer() {
                     <FormControl>
                       <Textarea
                         placeholder="es., 'Il lavandino della mia cucina si svuota molto lentamente e fa un rumore gorgogliante.'"
-                        className="min-h-[100px] resize-none"
+                        className="min-h-[100px] resize-none border-border bg-background/70 text-foreground"
                         {...field}
                       />
                     </FormControl>
@@ -99,31 +99,31 @@ export function AIssueAnalyzer() {
       </Card>
 
       {isLoading && (
-         <Card className="mt-6 animate-pulse">
+         <Card className="mt-6 animate-pulse bg-card/80 backdrop-blur-sm">
             <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                    <LoaderCircle className="h-5 w-5 animate-spin text-primary"/>
+                <CardTitle className="flex items-center gap-2 text-primary-foreground">
+                    <LoaderCircle className="h-5 w-5 animate-spin"/>
                     <span>Pipey sta pensando...</span>
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-                <div className="h-4 w-1/3 rounded bg-muted"></div>
+                <div className="h-4 w-1/3 rounded bg-muted/50"></div>
                 <div className="space-y-2">
-                    <div className="h-3 w-full rounded bg-muted"></div>
-                    <div className="h-3 w-5/6 rounded bg-muted"></div>
+                    <div className="h-3 w-full rounded bg-muted/50"></div>
+                    <div className="h-3 w-5/6 rounded bg-muted/50"></div>
                 </div>
-                 <div className="h-4 w-1/4 rounded bg-muted"></div>
+                 <div className="h-4 w-1/4 rounded bg-muted/50"></div>
                  <div className="space-y-2">
-                    <div className="h-3 w-full rounded bg-muted"></div>
-                    <div className="h-3 w-full rounded bg-muted"></div>
-                    <div className="h-3 w-3/4 rounded bg-muted"></div>
+                    <div className="h-3 w-full rounded bg-muted/50"></div>
+                    <div className="h-3 w-full rounded bg-muted/50"></div>
+                    <div className="h-3 w-3/4 rounded bg-muted/50"></div>
                 </div>
             </CardContent>
          </Card>
       )}
 
       {diagnosis && (
-        <Card className="mt-6">
+        <Card className="mt-6 bg-card/90 backdrop-blur-sm">
           <CardHeader>
             <CardTitle className="font-headline text-2xl">
               La Diagnosi di Pipey
