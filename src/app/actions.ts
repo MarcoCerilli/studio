@@ -9,7 +9,7 @@ export async function getAIDiagnosis(
   issueDescription: string
 ): Promise<{ success: true; data: Diagnosis } | { success: false; error: string }> {
   if (!issueDescription.trim()) {
-    return { success: false, error: 'Please describe your plumbing issue.' };
+    return { success: false, error: 'Per favore, descrivi il tuo problema idraulico.' };
   }
 
   try {
@@ -19,7 +19,7 @@ export async function getAIDiagnosis(
     console.error('AI diagnosis failed:', error);
     return {
       success: false,
-      error: 'Failed to get an AI diagnosis. The service may be temporarily unavailable. Please try again later.',
+      error: 'Impossibile ottenere una diagnosi AI. Il servizio potrebbe essere temporaneamente non disponibile. Riprova più tardi.',
     };
   }
 }

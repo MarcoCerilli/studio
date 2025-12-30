@@ -23,9 +23,9 @@ import { Separator } from './ui/separator';
 
 const FormSchema = z.object({
   issue: z.string().min(10, {
-    message: 'Please describe your issue in at least 10 characters.',
+    message: 'Descrivi il tuo problema in almeno 10 caratteri.',
   }).max(500, {
-    message: 'Please keep your description under 500 characters.'
+    message: 'Mantieni la descrizione sotto i 500 caratteri.'
   }),
 });
 
@@ -52,7 +52,7 @@ export function AIssueAnalyzer() {
     } else {
       toast({
         variant: 'destructive',
-        title: 'Analysis Failed',
+        title: 'Analisi Fallita',
         description: result.error,
       });
     }
@@ -71,7 +71,7 @@ export function AIssueAnalyzer() {
                   <FormItem>
                     <FormControl>
                       <Textarea
-                        placeholder="e.g., 'My kitchen sink is draining very slowly and there's a gurgling sound.'"
+                        placeholder="es., 'Il lavandino della mia cucina si svuota molto lentamente e fa un rumore gorgogliante.'"
                         className="min-h-[100px] resize-none"
                         {...field}
                       />
@@ -84,12 +84,12 @@ export function AIssueAnalyzer() {
                 {isLoading ? (
                   <>
                     <LoaderCircle className="mr-2 h-4 w-4 animate-spin" />
-                    Analyzing...
+                    Analizzando...
                   </>
                 ) : (
                   <>
                     <Sparkles className="mr-2 h-4 w-4" />
-                    Analyze My Issue
+                    Analizza il mio problema
                   </>
                 )}
               </Button>
@@ -103,7 +103,7 @@ export function AIssueAnalyzer() {
             <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                     <LoaderCircle className="h-5 w-5 animate-spin text-primary"/>
-                    <span>Pipey is thinking...</span>
+                    <span>Pipey sta pensando...</span>
                 </CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -126,14 +126,14 @@ export function AIssueAnalyzer() {
         <Card className="mt-6">
           <CardHeader>
             <CardTitle className="font-headline text-2xl">
-              Pipey's Diagnosis
+              La Diagnosi di Pipey
             </CardTitle>
           </CardHeader>
           <CardContent className="space-y-6 text-base">
             <div>
               <h3 className="flex items-center gap-2 font-semibold text-lg">
                 <Sparkles className="h-5 w-5 text-primary" />
-                Preliminary Diagnosis
+                Diagnosi Preliminare
               </h3>
               <p className="mt-2 text-muted-foreground">{diagnosis.preliminaryDiagnosis}</p>
             </div>
@@ -143,14 +143,14 @@ export function AIssueAnalyzer() {
             <div>
               <h3 className="flex items-center gap-2 font-semibold text-lg">
                 <Lightbulb className="h-5 w-5 text-accent" />
-                Recommended Action
+                Azione Consigliata
               </h3>
               <p className="mt-2 text-muted-foreground whitespace-pre-wrap">{diagnosis.recommendedAction}</p>
             </div>
 
             <Alert variant="destructive" className="bg-orange-50 border-orange-200 dark:bg-orange-950 dark:border-orange-800">
                 <TriangleAlert className="h-4 w-4 !text-orange-500" />
-                <AlertTitle className="text-orange-800 dark:text-orange-300">Important Disclaimer</AlertTitle>
+                <AlertTitle className="text-orange-800 dark:text-orange-300">Disclaimer Importante</AlertTitle>
                 <AlertDescription className="text-orange-700 dark:text-orange-400">
                     {diagnosis.disclaimer}
                 </AlertDescription>

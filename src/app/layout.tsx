@@ -3,8 +3,8 @@ import './globals.css';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'PlumbQuick | Fast & Reliable Plumbing',
-  description: 'Your trusted partner for all plumbing needs. From emergency repairs to AI-powered issue diagnosis, we provide quick and professional service.',
+  title: 'PlumbQuick | Idraulica Veloce e Affidabile',
+  description: 'Il tuo partner di fiducia per tutte le esigenze idrauliche. Dalle riparazioni di emergenza alla diagnosi dei problemi tramite intelligenza artificiale, forniamo un servizio rapido e professionale.',
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="it" className="dark">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />

@@ -4,17 +4,17 @@ export const DiagnosisOutputSchema = z.object({
   preliminaryDiagnosis: z
     .string()
     .describe(
-      'A short, clear explanation of the likely issue(s), written in simple language.'
+      'Una spiegazione breve e chiara del/i probabile/i problema/i, scritta in un linguaggio semplice.'
     ),
   recommendedAction: z
     .string()
     .describe(
-      'Suggested next steps. Provide simple, safe DIY instructions for minor issues, or strongly recommend calling a professional for complex/dangerous ones.'
+      'Passaggi successivi suggeriti. Fornire istruzioni fai-da-te semplici e sicure per problemi minori, o raccomandare vivamente di chiamare un professionista per quelli complessi/pericolosi.'
     ),
   disclaimer: z
     .string()
     .describe(
-      'A standard disclaimer that this is an AI diagnosis and not a substitute for a professional inspection.'
+      'Un disclaimer standard che indica che si tratta di una diagnosi AI e non sostituisce un\'ispezione professionale.'
     ),
 });
 
