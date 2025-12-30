@@ -1,5 +1,8 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
-import { Phone } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   Card,
@@ -28,6 +31,18 @@ export default function ContactPage() {
   // Sostituisci "391234567890" con il tuo numero, completo di prefisso internazionale (es. 39 per l'Italia).
   const whatsappNumber = '391234567890';
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  const recipientEmail = 'contact@ionabrosidraulica.com';
+
+  const [name, setName] = useState('');
+  const [phone, setPhone] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const generateMailtoLink = () => {
+    const subject = `Richiesta di contatto da ${name}`;
+    const body = `Un nuovo potenziale cliente ha compilato il modulo di contatto sul sito web.\n\nDettagli:\n\nNome: ${name}\nTelefono: ${phone}\nEmail: ${email}\n\nMessaggio:\n${message}\n\n--\nIonaBrosIdraulica`;
+    return `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  };
   
   return (
     <>
@@ -80,37 +95,39 @@ export default function ContactPage() {
                   </div>
                 </a>
                 <div className="flex items-center gap-4 rounded-lg border bg-card p-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail size-6 text-primary"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  <Mail className="size-6 text-primary"/>
                    <div>
                     <h3 className="font-semibold">Scrivici un'email</h3>
-                    <a href="mailto:contact@ionabrosidraulica.com" className="text-muted-foreground hover:text-primary">contact@ionabrosidraulica.com</a>
+                    <a href={`mailto:${recipientEmail}`} className="text-muted-foreground hover:text-primary">{recipientEmail}</a>
                   </div>
                 </div>
               </div>
           </div>
           <Card>
             <CardContent className="p-6">
-              <form className="space-y-4">
+              <div className="space-y-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                   <div className="space-y-2">
                     <Label htmlFor="name">Nome</Label>
-                    <Input id="name" placeholder="Il tuo nome" />
+                    <Input id="name" placeholder="Il tuo nome" value={name} onChange={(e) => setName(e.target.value)} />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Telefono</Label>
-                    <Input id="phone" type="tel" placeholder="Il tuo numero di telefono" />
+                    <Input id="phone" type="tel" placeholder="Il tuo numero di telefono" value={phone} onChange={(e) => setPhone(e.target.value)}/>
                   </div>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input id="email" type="email" placeholder="La tua email" />
+                  <Input id="email" type="email" placeholder="La tua email" value={email} onChange={(e) => setEmail(e.target.value)}/>
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="message">Messaggio</Label>
-                  <Textarea id="message" placeholder="Come possiamo aiutarti?" className="min-h-[120px]" />
+                  <Textarea id="message" placeholder="Come possiamo aiutarti?" className="min-h-[120px]" value={message} onChange={(e) => setMessage(e.target.value)}/>
                 </div>
-                <Button type="submit" className="w-full">Invia Messaggio</Button>
-              </form>
+                <Button asChild className="w-full">
+                  <a href={generateMailtoLink()}>Invia Messaggio</a>
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </div>
