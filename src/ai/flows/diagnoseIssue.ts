@@ -1,6 +1,7 @@
 'use server';
 
 import { ai } from '../genkit';
+import { z } from 'zod';
 import { DiagnosisOutputSchema, type Diagnosis } from './schemas';
 
 const diagnoseIssueFlow = ai.defineFlow(
