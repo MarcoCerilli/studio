@@ -1,5 +1,11 @@
-# Firebase Studio
+# PlumbQuick
 
-This is a NextJS starter in Firebase Studio.
+This is a Next.js application for PlumbQuick, a modern plumbing service.
 
-To get started, take a look at src/app/page.tsx.
+This app features:
+- A list of plumbing services.
+- An AI-powered issue analyzer to give preliminary advice.
+- A contact form for inquiries.
+- An emergency contact option.
+
+To get started, run `npm install` and then `npm run dev`.
