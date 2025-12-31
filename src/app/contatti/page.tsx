@@ -59,12 +59,12 @@ export default function ContactPage() {
                 priority
             />
         )}
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-primary-foreground">
+        <div className="relative z-10 flex h-full flex-col items-start justify-center text-left text-primary-foreground">
             <div className="container px-4 md:px-6">
                 <h1 className="font-headline text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
                     Contattaci
                 </h1>
-                <p className="mx-auto mt-4 max-w-[700px] text-lg text-primary-foreground/80">
+                <p className="mt-4 max-w-[700px] text-lg text-primary-foreground/80">
                     Siamo pronti ad aiutarti. Compila il modulo o chiamaci direttamente. Per emergenze, siamo disponibili 24/7.
                 </p>
             </div>

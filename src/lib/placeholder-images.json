@@ -15,7 +15,7 @@
     {
       "id": "services-overview-bg",
       "description": "Gocce d'acqua su una superficie blu scuro.",
-      "imageUrl": "https://images.unsplash.com/photo-1534279611536-63e547395a0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "/idraulico16.jpg",
       "imageHint": "water drops"
     },
     {
@@ -54,23 +54,23 @@
     {
       "id": "service-pipes",
       "description": "Nuove tubature in PVC installate in una parete durante una costruzione.",
-      "imageUrl": "",
+      "imageUrl": "/tubature.jpg",
       "imageHint": "copper pipes",
       "objectPosition": "object-center"
     },
     {
       "id": "service-fixtures",
       "description": "Un elegante rubinetto cromato in un bagno moderno.",
-      "imageUrl": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "/sanitari.webp",
       "imageHint": "modern faucet",
       "objectPosition": "object-bottom"
     },
     {
       "id": "service-upgrade",
       "description": "Un bagno completamente ristrutturato con infissi e piastrelle nuove.",
-      "imageUrl": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "/idraulico5.jpeg",
       "imageHint": "modern bathroom",
-      "objectPosition": "object-bottom"
+      "objectPosition": "object-top"
     },
     {
       "id": "service-boiler",
@@ -82,14 +82,14 @@
     {
       "id": "service-underfloor-heating",
       "description": "Installazione di tubi for the riscaldamento a pavimento prima della posa del massetto.",
-      "imageUrl": "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3<E2><82><AC><E2><82><AC>",
+      "imageUrl": "/pavimento.webp",
       "imageHint": "floor heating",
       "objectPosition": "object-center"
     },
     {
       "id": "service-ac-unit",
       "description": "Unità esterna di un condizionatore d'aria montata su una parete.",
-      "imageUrl": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib-rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "/idraulico8.png",
       "imageHint": "air conditioner",
       "objectPosition": "object-top"
     },
