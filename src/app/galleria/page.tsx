@@ -44,14 +44,16 @@ export default function GalleryPage() {
                       <CardContent className="relative flex aspect-square items-center justify-center p-0">
                         <Image
                           src={image.imageUrl}
-                          alt={image.description}
+                          alt={image.description || 'Lavoro svolto da IonaBrosIdraulica'}
                           fill
                           className="object-cover transition-transform duration-300 hover:scale-105"
                           data-ai-hint={image.imageHint}
                         />
-                         <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4">
-                            <p className="text-sm text-white">{image.description}</p>
-                        </div>
+                         {image.description && (
+                            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/70 to-transparent p-4">
+                                <p className="text-sm text-white">{image.description}</p>
+                            </div>
+                         )}
                       </CardContent>
                     </Card>
                   </div>
