@@ -3,7 +3,7 @@
     {
       "id": "hero-plumbing",
       "description": "Un idraulico professionista che lavora sotto un lavandino in una cucina moderna e luminosa.",
-      "imageUrl": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwbHVtYmVyfGVufDB8fHx8fDE3NjkzODAwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/idraulico5.jpeg",
       "imageHint": "plumber working"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "cta-bg",
       "description": "Attrezzi da idraulico professionali disposti su uno sfondo luminoso.",
-      "imageUrl": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxwbHVtYmVyfGVufDB8fHx8fDE3NjkzODAwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "/idraulico12.jpeg",
       "imageHint": "plumbing tools"
     },
     {
