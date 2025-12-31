@@ -4,9 +4,12 @@ import { Toaster } from '@/components/ui/toaster';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
 import { WhatsAppButton } from '@/components/whatsapp-button';
+import { CallToAction } from '@/components/call-to-action';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
+
 
 export const metadata: Metadata = {
-  title: 'IonaBrosIdraulica | Pronto Intervento Idraulico a Terracina',
+  title: 'IonaBrosImpianti Srls di Iona Alessandro | Pronto Intervento Idraulico a Terracina',
   description: 'Idraulico a Terracina. IonaBrosIdraulica offre servizi di pronto intervento, riparazioni idrauliche, spurghi e installazioni. Servizio rapido e professionale.',
 };
 
