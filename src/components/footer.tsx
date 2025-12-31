@@ -8,7 +8,7 @@ export function Footer() {
           <Link href="/" className="flex items-center gap-2">
             <Logo className="text-primary-foreground" />
           </Link>
-          <p className="text-center text-sm text-primary-foreground/80">&copy; 2024 IonaBrosIdraulica Srls. Tutti i diritti riservati.</p>
+          <p className="text-center text-sm text-primary-foreground/80">&copy; 2024 IonaBros Impianti srls ss 148 pontina km.105.500 04019 terracina lt p.iva 03291610594</p>
           <div className="flex items-center gap-4">
             <Link href="#" className="text-sm hover:underline">Informativa sulla Privacy</Link>
             <Link href="#" className="text-sm hover:underline">Termini di Servizio</Link>
