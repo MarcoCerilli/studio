@@ -83,6 +83,12 @@
       "description": "Installazione di tubi per il riscaldamento a pavimento prima della posa del massetto.",
       "imageUrl": "https://images.unsplash.com/photo-1620629524346-73693a7450bb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx1bmRlcmZsb29yJTIwaGVhdGluZ3xlbnwwfHx8fDE3NjkyOTg0NDZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "underfloor heating"
+    },
+    {
+      "id": "service-ac-unit",
+      "description": "Unità esterna di un condizionatore d'aria montata su una parete.",
+      "imageUrl": "https://images.unsplash.com/photo-1581467641279-a66f7457c3e3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "air conditioner"
     }
   ]
 }

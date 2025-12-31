@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import {
+  AirVent,
   Construction,
   Droplets,
   Flame,
@@ -69,6 +70,12 @@ const services = [
     description: 'Progettiamo e realizziamo impianti di riscaldamento a pavimento per un calore uniforme e un\'efficienza superiore.',
     imageId: 'service-underfloor-heating'
   },
+  {
+    icon: <AirVent className="size-8 text-primary" />,
+    title: 'Installazione e Manutenzione Climatizzatori',
+    description: 'Forniamo servizi di installazione e manutenzione per impianti di climatizzazione, garantendo comfort tutto l\'anno.',
+    imageId: 'service-ac-unit'
+  }
 ];
 
 export default function ServicesPage() {
@@ -101,21 +108,8 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => {
-              const image = PlaceHolderImages.find(p => p.id === service.imageId);
               return (
                 <Card key={service.title} className="flex flex-col overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
-                   {image && (
-                     <div className="relative h-64 w-full">
-                        <Image
-                            src={image.imageUrl}
-                            alt={image.description}
-                            fill
-                            className="object-cover"
-                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                            data-ai-hint={image.imageHint}
-                        />
-                     </div>
-                   )}
                   <CardHeader>
                     <div className="flex items-center gap-4">
                       <div className="flex size-12 items-center justify-center rounded-full bg-secondary">
