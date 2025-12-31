@@ -1,8 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
-import { buttonVariants } from './ui/button';
 import { whatsappNumber } from '@/lib/config';
 
 const WhatsAppIcon = () => (
@@ -19,7 +17,7 @@ const WhatsAppIcon = () => (
 );
 
 export function WhatsAppButton() {
-  const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  const whatsappLink = `https://wa.me/${whatsappNumber.replace(/\s/g, '')}`;
 
   return (
     <Link 
@@ -27,13 +25,11 @@ export function WhatsAppButton() {
       target="_blank" 
       rel="noopener noreferrer"
       aria-label="Contattaci su WhatsApp"
-      className={cn(
-        "fixed bottom-6 right-6 z-50 rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-110 hover:bg-[#128C7E]",
-        buttonVariants({ size: 'icon' }),
-        'size-14'
-      )}
+      className="fixed bottom-6 right-6 z-50 group"
     >
-      <WhatsAppIcon />
+      <div className="flex items-center justify-center size-14 rounded-full bg-[#25D366] text-white shadow-lg transition-transform group-hover:scale-110 group-hover:bg-[#128C7E]">
+        <WhatsAppIcon />
+      </div>
     </Link>
   );
 }
