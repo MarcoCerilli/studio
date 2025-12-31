@@ -65,6 +65,12 @@
       "description": "Un bagno completamente ristrutturato con infissi e piastrelle nuove.",
       "imageUrl": "https://images.unsplash.com/photo-1744869524920-f0efc925b82f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxiYXRocm9vbSUyMHJlbW9kZWx8ZW58MHx8fHwxNzY3MTA2MzkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "bathroom remodel"
+    },
+    {
+      "id": "cta-bg",
+      "description": "Una texture di gocce d'acqua su una superficie blu.",
+      "imageUrl": "https://images.unsplash.com/photo-1550133730-695473e544be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx3YXRlciUyMHRleHR1cmV8ZW58MHx8fHwxNzE2NDAxODAwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "water texture"
     }
   ]
 }
