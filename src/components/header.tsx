@@ -27,6 +27,7 @@ import {
   SheetClose,
 } from '@/components/ui/sheet';
 import { cn } from '@/lib/utils';
+import { whatsappNumber } from '@/lib/config';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -98,9 +99,9 @@ export function Header() {
           </AlertDialogDescription>
         </AlertDialogHeader>
         <div className="flex flex-col items-center justify-center gap-4 py-4">
-          <a href="+393393433568" className="flex items-center gap-3 rounded-lg bg-primary px-6 py-3 text-2xl font-bold text-primary-foreground">
+          <a href={`tel:${whatsappNumber}`} className="flex items-center gap-3 rounded-lg bg-primary px-6 py-3 text-2xl font-bold text-primary-foreground">
             <Phone />
-            <span>123-456-7890</span>
+            <span>{whatsappNumber}</span>
           </a>
           <p className="text-sm text-muted-foreground">Premi per chiamare ora.</p>
         </div>

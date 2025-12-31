@@ -81,7 +81,7 @@ export default function ContactPage() {
                   <Phone className="size-6 text-primary" /> 
                   <div>
                     <h3 className="font-semibold">Chiamaci</h3>
-                    <a href="tel:+393393433568" className="text-muted-foreground hover:text-primary">123-456-7890</a>
+                    <a href={`tel:${whatsappNumber}`} className="text-muted-foreground hover:text-primary">{whatsappNumber}</a>
                   </div>
                 </div>
                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 rounded-lg border bg-card p-4 transition-colors hover:bg-muted">
