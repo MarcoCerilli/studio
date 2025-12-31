@@ -21,7 +21,7 @@
     {
       "id": "contact-hero",
       "description": "Una mano che tiene un telefono con l'app dei contatti aperta, su uno sfondo di un furgone di servizio.",
-      "imageUrl": "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3<E2><82><AC><E2><82><AC>",
+      "imageUrl": "/idraulico14.jpeg",
       "imageHint": "contact us"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "cta-bg",
       "description": "Attrezzi da idraulico professionali disposti su uno sfondo luminoso.",
-      "imageUrl": "/idraulico12.jpeg",
+      "imageUrl": "/idraulico13.jpeg",
       "imageHint": "plumbing tools"
     },
     {

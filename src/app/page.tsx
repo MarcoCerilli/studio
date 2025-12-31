@@ -9,8 +9,6 @@ import { Droplets, Plug, Thermometer } from 'lucide-react';
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-plumbing');
 const analyzerImage = PlaceHolderImages.find((img) => img.id === 'analyzer-bg');
-const servicesOverviewImage = PlaceHolderImages.find((img) => img.id === 'services-overview-bg');
-
 
 const featuredServices = [
     {
@@ -33,27 +31,16 @@ const featuredServices = [
 export default function Home() {
   return (
     <>
-      <section className="relative h-[70vh] min-h-[450px] w-full">
-        {heroImage && (
-          <Image
-            src={heroImage.imageUrl}
-            alt={heroImage.description}
-            fill
-            className="object-cover"
-            data-ai-hint={heroImage.imageHint}
-            priority
-          />
-        )}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent" />
-        <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
-          <div className="container px-4 md:px-6">
-            <h1 className="font-headline text-4xl font-bold tracking-tight [text-shadow:0_2px_4px_rgba(0,0,0,0.5)] sm:text-5xl md:text-6xl lg:text-7xl">
+      <section className="w-full bg-secondary/50 py-20 md:py-32 lg:py-40">
+        <div className="container grid items-center gap-12 px-4 md:grid-cols-2 md:px-6 lg:gap-20">
+          <div className="flex flex-col items-start space-y-6">
+            <h1 className="font-headline text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
               Problemi Idraulici? Risolti.
             </h1>
-            <p className="mx-auto mt-4 max-w-[700px] text-lg text-gray-200 [text-shadow:0_1px_3px_rgba(0,0,0,0.5)] md:text-xl">
+            <p className="max-w-[600px] text-lg text-muted-foreground md:text-xl">
               Servizi idraulici veloci, affidabili e professionali. La tua emergenza è la nostra priorità.
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <div className="flex flex-wrap gap-4">
               <Link href="/servizi">
                 <Button size="lg">Scopri i Nostri Servizi</Button>
               </Link>
@@ -61,6 +48,18 @@ export default function Home() {
                 <Button size="lg" variant="secondary">Richiedi un Preventivo</Button>
               </Link>
             </div>
+          </div>
+          <div className="relative h-full min-h-[300px] w-full lg:min-h-[400px]">
+            {heroImage && (
+              <Image
+                src={heroImage.imageUrl}
+                alt={heroImage.description}
+                fill
+                className="rounded-xl object-cover shadow-xl"
+                data-ai-hint={heroImage.imageHint}
+                priority
+              />
+            )}
           </div>
         </div>
       </section>
