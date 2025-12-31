@@ -31,11 +31,14 @@ export function Logo({ className }: { className?: string }) {
         <path d="M14 13h4" />
         <path d="M10 5H4" />
       </svg>
-      <span className="font-headline text-2xl font-bold text-foreground">
-        IonaBrosImpianti Srls
-      </span>
+      <div className="flex flex-col">
+        <span className="font-headline text-xl font-bold leading-tight text-foreground">
+          IonaBrosImpianti Srls
+        </span>
+        <span className="text-xs font-medium text-muted-foreground -mt-1">
+            di Iona Alessandro
+        </span>
+      </div>
     </div>
   );
 }
-
-    
