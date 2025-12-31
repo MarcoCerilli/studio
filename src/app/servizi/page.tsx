@@ -1,3 +1,4 @@
+
 import Image from 'next/image';
 import {
   AirVent,
@@ -108,8 +109,21 @@ export default function ServicesPage() {
         <div className="container px-4 md:px-6">
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => {
+              const serviceImage = PlaceHolderImages.find((img) => img.id === service.imageId);
               return (
                 <Card key={service.title} className="flex flex-col overflow-hidden transition-all hover:shadow-xl hover:-translate-y-1">
+                  {serviceImage && (
+                    <div className="relative h-48 w-full">
+                      <Image
+                        src={serviceImage.imageUrl}
+                        alt={serviceImage.description}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                        data-ai-hint={serviceImage.imageHint}
+                      />
+                    </div>
+                  )}
                   <CardHeader>
                     <div className="flex items-center gap-4">
                       <div className="flex size-12 items-center justify-center rounded-full bg-secondary">

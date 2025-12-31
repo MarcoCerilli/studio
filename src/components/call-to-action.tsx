@@ -1,3 +1,4 @@
+
 'use client';
 
 import Image from 'next/image';
@@ -24,7 +25,7 @@ export function CallToAction() {
           <h2 className="font-headline text-3xl font-bold tracking-tighter text-primary sm:text-4xl md:text-5xl">
             Pronto a risolvere i tuoi problemi idraulici?
           </h2>
-          <p className="mx-auto max-w-[600px] text-gray-200 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+          <p className="mx-auto max-w-[600px] text-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
             Non lasciare che un piccolo problema diventi un grande danno. Contattaci oggi per un preventivo gratuito e senza impegno.
           </p>
         </div>
