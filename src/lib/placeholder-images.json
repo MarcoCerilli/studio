@@ -15,13 +15,13 @@
     {
       "id": "services-bg",
       "description": "Una serie di attrezzi da idraulico professionali disposti ordinatamente su una superficie di legno.",
-      "imageUrl": "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwbHVtYmluZyUyMHRvb2xzfGVufDB8fHx8MTc2NzE4Mzk2NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "plumbing tools"
     },
     {
       "id": "contact-hero",
       "description": "Una mano che tiene un telefono con l'app dei contatti aperta, su uno sfondo di un furgone di servizio.",
-      "imageUrl": "https://images.unsplash.com/photo-1740560051533-3acef26ace95?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb250YWN0JTIwdXN8ZW58MHx8fHwxNzY3MDgzNDUwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "contact us"
     },
     {
