@@ -6,8 +6,8 @@ import { Footer } from '@/components/footer';
 import { WhatsAppButton } from '@/components/whatsapp-button';
 
 export const metadata: Metadata = {
-  title: 'IonaBrosIdraulica | Idraulica Veloce e Affidabile',
-  description: 'Il tuo partner di fiducia per tutte le esigenze idrauliche. Dalle riparazioni di emergenza alla diagnosi dei problemi tramite intelligenza artificiale, forniamo un servizio rapido e professionale.',
+  title: 'IonaBrosIdraulica | Pronto Intervento Idraulico a Terracina',
+  description: 'Idraulico a Terracina. IonaBrosIdraulica offre servizi di pronto intervento, riparazioni idrauliche, spurghi e installazioni. Servizio rapido e professionale.',
 };
 
 export default function RootLayout({

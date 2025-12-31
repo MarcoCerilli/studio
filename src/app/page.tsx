@@ -50,10 +50,10 @@ export default function Home() {
         <div className="relative z-10 flex h-full flex-col items-center justify-center text-center text-white">
             <div className="container px-4 md:px-6">
                 <h1 className="font-headline text-4xl font-bold tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
-                  Problemi Idraulici? Risolti.
+                  Idraulico a Terracina? Risolto.
                 </h1>
                 <p className="mx-auto mt-4 max-w-3xl text-lg text-gray-200 md:text-xl">
-                  Servizi idraulici veloci, affidabili e professionali. La tua emergenza è la nostra priorità.
+                  Servizi idraulici veloci, affidabili e professionali a Terracina e dintorni. La tua emergenza è la nostra priorità.
                 </p>
                 <div className="mt-8 flex flex-wrap justify-center gap-4">
                   <Link href="/servizi">
