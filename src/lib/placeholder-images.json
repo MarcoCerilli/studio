@@ -3,19 +3,19 @@
     {
       "id": "hero-plumbing",
       "description": "Un idraulico professionista che lavora sotto un lavandino in una cucina moderna e luminosa.",
-      "imageUrl": "https://images.unsplash.com/photo-1549576497-2167d2d38834?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwbHVtYmVyfGVufDB8fHx8fDE3NjkzODAwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageUrl": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwbHVtYmVyfGVufDB8fHx8fDE3NjkzODAwMDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "plumber working"
     },
     {
       "id": "analyzer-bg",
       "description": "Una texture blu scuro astratta e sobria.",
-      "imageUrl": "https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1557682250-33bd709cbe85?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "abstract background"
     },
     {
       "id": "services-overview-bg",
       "description": "Idraulico che installa un lavandino in un bagno moderno",
-      "imageUrl": "https://images.unsplash.com/photo-1600047509782-20b3980b4b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageUrl": "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "plumbing tools"
     },
     {
@@ -75,7 +75,7 @@
     {
       "id": "cta-bg",
       "description": "Attrezzi da idraulico professionali disposti su uno sfondo scuro.",
-      "imageUrl": "/idraulico4.jpeg",
+      "imageUrl": "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "plumbing tools"
     },
     {
@@ -103,39 +103,69 @@
   "galleryImages": [
     {
       "id": "gallery-1",
-      "description": "Ristrutturazione completa di un bagno con doccia moderna.",
-      "imageUrl": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBiYXRocm9vbXxlbnwwfHx8fDE3NjcxMDk2MDN8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern bathroom"
+      "description": "Installazione professionale di un bagno moderno.",
+      "imageUrl": "/idraulico1.jpeg",
+      "imageHint": "bathroom installation"
     },
     {
       "id": "gallery-2",
-      "description": "Installazione di tubature in rame per un nuovo impianto.",
-      "imageUrl": "https://images.unsplash.com/photo-1694827893591-af9b80361599?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxjb3BwZXIlMjBwaXBlc3xlbnwwfHx8fDE3NjcxMDYzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "copper pipes"
+      "description": "Dettaglio di una nuova tubatura installata.",
+      "imageUrl": "/idraulico2.jpeg",
+      "imageHint": "pipe detail"
     },
     {
       "id": "gallery-3",
-      "description": "Installazione di un elegante rubinetto cromato in un bagno di design.",
-      "imageUrl": "https://images.unsplash.com/photo-1595515106965-fabf06244e92?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxtb2Rlcm4lMjBmYXVjZXR8ZW58MHx8fHwxNzY3MTg2NzM3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "modern faucet"
+      "description": "Riparazione di un impianto idraulico complesso.",
+      "imageUrl": "/idraulico3.jpeg",
+      "imageHint": "plumbing repair"
     },
     {
       "id": "gallery-4",
-      "description": "Tecnico al lavoro su una caldaia a condensazione ad alta efficienza.",
-      "imageUrl": "https://images.unsplash.com/photo-1706319477893-d56342c42aff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxib2lsZXIlMjByb29tfGVufDB8fHx8MTc2NzE4NjczN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "boiler room"
+      "description": "Vista di un bagno completato e funzionante.",
+      "imageUrl": "/idraulico4.jpeg",
+      "imageHint": "finished bathroom"
     },
     {
       "id": "gallery-5",
-      "description": "Posa di un impianto di riscaldamento a pavimento.",
-      "imageUrl": "https://images.unsplash.com/photo-1664429764866-227d36d8c1a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmbG9vciUyMGhlYXRpbmd8ZW58MHx8fHwxNzY3MTgxODkyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "floor heating"
+      "description": "Sostituzione di una vecchia caldaia.",
+      "imageUrl": "/idraulico5.jpeg",
+      "imageHint": "boiler replacement"
     },
     {
       "id": "gallery-6",
-      "description": "Installazione dell'unità esterna di un climatizzatore.",
-      "imageUrl": "https://images.unsplash.com/photo-1726614846573-c1ac2e6161d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhaXIlMjBjb25kaXRpb25lcnxlbnwwfHx8fDE3NjcxMDg3ODl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "air conditioner"
+      "description": "Installazione di un nuovo impianto di climatizzazione.",
+      "imageUrl": "/idraulico6.jpeg",
+      "imageHint": "ac installation"
+    },
+    {
+      "id": "gallery-7",
+      "description": "Tecnico al lavoro su un quadro idraulico.",
+      "imageUrl": "/idraulico7.jpeg",
+      "imageHint": "plumber working"
+    },
+    {
+      "id": "gallery-8",
+      "description": "Controllo finale di un'installazione.",
+      "imageUrl": "/idraulico8.jpeg",
+      "imageHint": "final check"
+    },
+    {
+      "id": "gallery-9",
+      "description": "Nuovo set di rubinetteria in una cucina moderna.",
+      "imageUrl": "/idraulico9.jpeg",
+      "imageHint": "kitchen faucet"
+    },
+    {
+      "id": "gallery-10",
+      "description": "Impianto di riscaldamento a pavimento in fase di posa.",
+      "imageUrl": "/idraulico10.jpeg",
+      "imageHint": "floor heating"
+    },
+    {
+      "id": "gallery-11",
+      "description": "Dettaglio di una saldatura su tubatura in rame.",
+      "imageUrl": "/idraulico11.jpeg",
+      "imageHint": "copper pipe"
     }
   ]
 }
