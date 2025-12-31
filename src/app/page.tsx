@@ -3,9 +3,30 @@ import { Button } from '@/components/ui/button';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { AIssueAnalyzer } from '@/components/ai-issue-analyzer';
 import Link from 'next/link';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Droplets, Plug, Thermometer } from 'lucide-react';
 
 const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-plumbing');
 const analyzerImage = PlaceHolderImages.find((img) => img.id === 'analyzer-bg');
+const servicesBgImage = PlaceHolderImages.find((img) => img.id === 'services-bg');
+
+const featuredServices = [
+    {
+      icon: <Droplets className="size-8 text-primary" />,
+      title: 'Riparazione Perdite',
+      description: 'Individuiamo e ripariamo rapidamente le perdite per prevenire danni e risparmiare acqua.',
+    },
+    {
+      icon: <Plug className="size-8 text-primary" />,
+      title: 'Pulizia Scarichi',
+      description: 'Liberiamo scarichi intasati di lavandini, docce e WC per un flusso d\'acqua regolare.',
+    },
+    {
+      icon: <Thermometer className="size-8 text-primary" />,
+      title: 'Servizio Scaldabagni',
+      description: 'Riparazione e installazione per tutti i tipi di scaldabagni, per garantirti sempre acqua calda.',
+    },
+];
 
 export default function Home() {
   return (
@@ -39,6 +60,46 @@ export default function Home() {
               </Link>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section id="services-overview" className="relative w-full py-16 md:py-24 lg:py-32">
+        {servicesBgImage && (
+            <Image
+                src={servicesBgImage.imageUrl}
+                alt={servicesBgImage.description}
+                fill
+                className="object-cover opacity-10"
+                data-ai-hint={servicesBgImage.imageHint}
+            />
+        )}
+        <div className="relative container z-10 px-4 md:px-6">
+            <div className="mx-auto max-w-3xl text-center">
+                <h2 className="font-headline text-3xl font-bold tracking-tight text-foreground sm:text-4xl">I Nostri Servizi Principali</h2>
+                <p className="mt-4 text-muted-foreground">
+                    Dalle emergenze alle installazioni, copriamo ogni tua necessità con professionalità e rapidità.
+                </p>
+            </div>
+            <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3">
+                {featuredServices.map((service) => (
+                    <Card key={service.title} className="text-center transition-all hover:shadow-xl hover:-translate-y-1">
+                        <CardHeader>
+                            <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-secondary">
+                                {service.icon}
+                            </div>
+                            <CardTitle className="font-headline text-xl pt-4">{service.title}</CardTitle>
+                        </CardHeader>
+                        <CardContent>
+                            <p className="text-muted-foreground">{service.description}</p>
+                        </CardContent>
+                    </Card>
+                ))}
+            </div>
+            <div className="mt-12 text-center">
+                <Link href="/servizi">
+                    <Button size="lg">Vedi tutti i servizi</Button>
+                </Link>
+            </div>
         </div>
       </section>
 
