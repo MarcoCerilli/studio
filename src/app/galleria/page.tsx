@@ -5,8 +5,7 @@ import { GalleryImages, PlaceHolderImages } from "@/lib/placeholder-images";
 import { CallToAction } from "@/components/call-to-action";
 import { InfiniteCarousel } from "@/components/InfiniteCarousel";
 
-
-const galleryHeroImage = GalleryImages.find((img) => img.id === 'gallery-10');
+const galleryHeroImage = GalleryImages.find((img) => img.id === "gallery-10");
 const ctaImage = PlaceHolderImages.find((img) => img.id === "cta-galleria");
 
 export default function GalleryPage() {
@@ -44,20 +43,23 @@ export default function GalleryPage() {
         </div>
       </section>
 
-      <section className="w-full py-16 bg-slate-50 overflow-hidden">
+      <section className="w-full py-12 md:py-16 bg-slate-50 overflow-hidden">
         {/* VELOCITÀ IMPOSTATA A 80 PER ESSERE MOLTO LENTA */}
         <InfiniteCarousel speed={80}>
           {GalleryImages.map((image) => (
             <div
               key={image.id}
-              className="relative h-[400px] w-[400px] flex-shrink-0 overflow-hidden rounded-2xl border border-gray-200 shadow-lg"
+              /* MOBILE: h-[280px] w-[280px] 
+           DESKTOP (da md in su): h-[400px] w-[400px] 
+        */
+              className="relative h-[280px] w-[280px] md:h-[400px] md:w-[400px] mx-2 md:mx-4 flex-shrink-0 overflow-hidden rounded-2xl border border-gray-200 shadow-lg"
             >
               <Image
                 src={image.imageUrl}
                 alt={image.description || "Lavoro svolto da IonaBrosIdraulica"}
                 fill
                 className="object-cover"
-                sizes="400px"
+                sizes="(max-width: 768px) 280px, 400px"
               />
               {image.description && (
                 <div className="absolute inset-x-0 bottom-0 bg-black/50 p-6">
