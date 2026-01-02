@@ -11,7 +11,6 @@ import { Logo } from '@/components/logo';
 import { Button } from '@/components/ui/button';
 import {
   AlertDialog,
-  AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
@@ -32,7 +31,7 @@ import { whatsappNumber } from '@/lib/config';
 const navLinks = [
   { href: '/', label: 'Home' },
   { href: '/servizi', label: 'Servizi' },
-  { href: '/galleria', label: 'Galleria'},
+  { href: '/galleria', label: 'Galleria' },
   { href: '/contatti', label: 'Contatti' },
 ];
 
@@ -57,21 +56,29 @@ export function Header() {
   );
 
   const mobileNav = (
-    <Sheet>
-      <SheetTrigger asChild>
-        <Button variant="outline" size="icon" className="md:hidden">
-          <Menu className="h-6 w-6" />
-          <span className="sr-only">Apri menu</span>
-        </Button>
-      </SheetTrigger>
-      <SheetContent side="left">
-        <div className="flex flex-col gap-6 pt-12">
+  <Sheet>
+    <SheetTrigger asChild>
+      <Button variant="outline" size="icon" className="md:hidden shrink-0">
+        <Menu className="h-6 w-6" />
+        <span className="sr-only">Apri menu</span>
+      </Button>
+    </SheetTrigger>
+    <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+      <div className="flex flex-col gap-8 pt-10">
+        
+        {/* INSERISCI IL LOGO QUI */}
+        <div className="px-2 border-b pb-6">
+          <Logo />
+        </div>
+
+        {/* Link di navigazione */}
+        <nav className="flex flex-col gap-4">
           {navLinks.map((link) => (
             <SheetClose asChild key={link.href}>
               <Link
                 href={link.href}
                 className={cn(
-                  'text-lg font-medium transition-colors hover:text-primary',
+                  'text-xl font-semibold transition-colors hover:text-primary',
                   pathname === link.href ? 'text-primary' : 'text-foreground'
                 )}
               >
@@ -79,21 +86,21 @@ export function Header() {
               </Link>
             </SheetClose>
           ))}
-        </div>
-      </SheetContent>
-    </Sheet>
-  );
-  
+        </nav>
+      </div>
+    </SheetContent>
+  </Sheet>
+);
+
   const emergencyButton = (
     <AlertDialog>
       <AlertDialogTrigger asChild>
-      <Button className="bg-accent text-accent-foreground hover:bg-accent/90">
-        <AlertTriangle className="mr-2 size-4" />
-        {/* Nascondi il testo extra su mobile e mostralo solo da tablet in su */}
-        <span className="hidden sm:inline">Contattaci Subito Per Intervento</span>
-        <span className="sm:hidden">Emergenza</span>
-      </Button>
-    </AlertDialogTrigger>
+        {/* Su mobile diventa un cerchio con la cornetta (h-10 w-10), su desktop torna lungo */}
+        <Button className="bg-accent text-accent-foreground hover:bg-accent/90 shrink-0 h-10 w-10 p-0 sm:h-auto sm:w-auto sm:px-4 sm:py-2">
+          <Phone className="size-5 sm:mr-2 sm:size-4" />
+          <span className="hidden sm:inline text-sm">Contattaci Subito Per Intervento</span>
+        </Button>
+      </AlertDialogTrigger>
       <AlertDialogContent>
         <AlertDialogHeader>
           <AlertDialogTitle>Emergenza Idraulica?</AlertDialogTitle>
@@ -102,7 +109,10 @@ export function Header() {
           </AlertDialogDescription>
         </AlertDialogHeader>
         <div className="flex flex-col items-center justify-center gap-4 py-4">
-          <a href={`tel:${whatsappNumber}`} className="flex items-center gap-3 rounded-lg bg-primary px-6 py-3 text-2xl font-bold text-primary-foreground">
+          <a
+            href={`tel:${whatsappNumber}`}
+            className="flex items-center gap-3 rounded-lg bg-primary px-6 py-3 text-2xl font-bold text-primary-foreground"
+          >
             <Phone />
             <span>{whatsappNumber}</span>
           </a>
@@ -115,15 +125,20 @@ export function Header() {
     </AlertDialog>
   );
 
-
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 px-4 py-3 shadow-sm backdrop-blur-sm md:px-6">
-      <div className="container mx-auto flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2">
+    <header className="sticky top-0 z-50 w-full border-b bg-background/95 shadow-sm backdrop-blur-sm">
+      {/* container px-4 e h-16 per dare aria e allineamento perfetto */}
+      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-6">
+        
+        {/* Logo con shrink-0 così il testo non va mai a capo anche se lungo */}
+        <Link href="/" className="flex shrink-0 items-center gap-2">
           <Logo />
         </Link>
+
         {desktopNav}
-        <div className="flex items-center gap-4">
+
+        {/* Gruppo pulsanti mobile distanziato bene dal logo */}
+        <div className="flex items-center gap-2 sm:gap-4">
           {emergencyButton}
           {mobileNav}
         </div>

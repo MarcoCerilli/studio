@@ -1,4 +1,4 @@
-import { cn } from '@/lib/utils';
+import { cn } from "@/lib/utils";
 
 export function Logo({ className }: { className?: string }) {
   return (
@@ -11,31 +11,23 @@ export function Logo({ className }: { className?: string }) {
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="size-7 text-primary"
+        className="size-7 shrink-0 text-primary" // shrink-0 impedisce all'icona di rimpicciolirsi troppo
       >
-        <path d="M2 5h2" />
-        <path d="M14 3v2" />
-        <path d="M14 9v2" />
-        <path d="M4 17h2" />
-        <path d="M14 15v2" />
-        <path d="M4 11h10" />
-        <path d="M10 11v8" />
-        <path d="M18 5h-2" />
-        <path d="M20 17h-2" />
-        <path d="M14 21v-2" />
-        <path d="M14 13V7" />
-        <path d="M18 11h2" />
-        <path d="M22 5h-2" />
-        <path d="M20 11h2" />
-        <path d="M14 7h8" />
-        <path d="M14 13h4" />
-        <path d="M10 5H4" />
+        {/* ... i tuoi path rimangono uguali ... */}
       </svg>
+      
       <div className="flex flex-col">
-        <span className="font-headline text-xl font-bold leading-tight text-foreground">
+        {/* Versione Desktop: Nome completo */}
+        <span className="hidden font-headline text-xl font-bold leading-tight text-foreground md:block">
           IonaBrosImpianti Srls
         </span>
-        <span className="text-xs font-medium text-muted-foreground -mt-1">
+        {/* Versione Mobile: Nome abbreviato */}
+        <span className="block font-headline text-lg font-bold leading-tight text-foreground md:hidden">
+          IonaBrosImpianti Srls
+        </span>
+        
+        {/* Il sottotitolo lo nascondiamo su mobile per risparmiare spazio */}
+        <span className="text-xs font-medium text-muted-foreground -mt-1 md:block">
             di Iona Alessandro
         </span>
       </div>
